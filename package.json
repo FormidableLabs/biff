@@ -1,6 +1,6 @@
 {
   "name": "biff",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Flux architecture made easy",
   "keywords": [
     "flux",
@@ -31,8 +31,7 @@
     "es6-promise": "^2.0.0",
     "events": "^1.0.2",
     "flux": "^2.0.1",
-    "object-assign": "^1.0.0",
-    "simple-console": "^0.1.1"
+    "object-assign": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "^5.9.1",
