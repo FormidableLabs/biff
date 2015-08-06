@@ -8,7 +8,6 @@ function withErrorLogging(f) {
     try {
       f.apply(this, arguments);
     } catch(e) {
-      con.error(e.stack);
     }
   };
 };
