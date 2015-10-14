@@ -4,7 +4,7 @@ var React = require('react');
 var shallowEqual = require('fbjs/lib/shallowEqual');
 
 module.exports = function FluxComponent(Component, stores, storeDidChange) {
-  var FluxComponent = React.createClass({
+  const FluxReactComponent = React.createClass({
     getState(props) {
       return storeDidChange(props);
     },
@@ -42,5 +42,6 @@ module.exports = function FluxComponent(Component, stores, storeDidChange) {
       return <Component {...this.props} {...this.state} />;
     }
   });
-  return FluxComponent;
+  
+  return FluxReactComponent;
 };
