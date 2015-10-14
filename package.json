@@ -39,6 +39,7 @@
   "dependencies": {
     "es6-promise": "^2.0.0",
     "events": "^1.0.2",
+    "fbjs": "^0.3.2",
     "flux": "^2.0.1",
     "object-assign": "^1.0.0"
   },
