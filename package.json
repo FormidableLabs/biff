@@ -41,7 +41,8 @@
     "events": "^1.0.2",
     "fbjs": "^0.3.2",
     "flux": "^2.0.1",
-    "object-assign": "^1.0.0"
+    "object-assign": "^1.0.0",
+    "react-pure-render": "^1.0.2"
   },
   "devDependencies": {
     "babel": "^5.8.23",

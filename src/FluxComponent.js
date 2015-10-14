@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react');
-var shallowEqual = require('fbjs/lib/shallowEqual');
+var shallowEqual = require('react-pure-render/shallowEqual');
 
 module.exports = function FluxComponent(Component, stores, storeDidChange) {
   const FluxReactComponent = React.createClass({
