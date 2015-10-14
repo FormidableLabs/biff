@@ -1,10 +1,10 @@
 'use strict';
 
 var React = require('react');
-var shallowEqual = require('react/lib/shallowEqual');
+var shallowEqual = require('fbjs/lib/shallowEqual');
 
 module.exports = function FluxComponent(Component, stores, storeDidChange) {
-  const FluxComponent = React.createClass({
+  var FluxComponent = React.createClass({
     getState(props) {
       return storeDidChange(props);
     },
