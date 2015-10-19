@@ -1,10 +1,10 @@
 'use strict';
 
 var React = require('react');
-var shallowEqual = require('react/lib/shallowEqual');
+var shallowEqual = require('react-pure-render/shallowEqual');
 
 module.exports = function FluxComponent(Component, stores, storeDidChange) {
-  const FluxComponent = React.createClass({
+  const FluxReactComponent = React.createClass({
     getState(props) {
       return storeDidChange(props);
     },
@@ -42,5 +42,6 @@ module.exports = function FluxComponent(Component, stores, storeDidChange) {
       return <Component {...this.props} {...this.state} />;
     }
   });
-  return FluxComponent;
+  
+  return FluxReactComponent;
 };
